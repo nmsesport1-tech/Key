@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "keybindprofiles",
+  "version": "${version}",
+  "name": "Keybind Profiles",
+  "description": "Profile für Tastenbelegungen: erstellen, duplizieren, löschen und umschalten direkt im Steuerung-Menü.",
+  "authors": ["du"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.keybindprofiles.KeybindProfilesClient"]
+  },
+  "mixins": ["keybindprofiles.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
